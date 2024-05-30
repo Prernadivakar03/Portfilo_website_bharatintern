@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PRERNA DIVAKAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(3, 0, 18);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(37, 1, 57);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 0.5s ease-in-out;
+        }
+        @keyframes slideDown {
+            from {
+                top: -60px;
+            }
+            to {
+                top: 0;
+            }
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s, font-size 0.3s;
+        }
+        nav ul li a:hover {
+            color: blueviolet;
+            font-size: 1.01rem;
+        }
+        .social-media {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .social-media a img {
+            width: 24px;
+            height: 24px;
+            transition: opacity 0.3s;
+        }
+        .social-media a:hover img {
+            opacity: 0.7;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 100px 20px 60px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .about-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .about-image:hover {
+            transform: scale(1.1);
+        }
+        .skills-section {
+            margin: 60px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .skills-section h2 {
+            margin-bottom: 20px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .skill-item {
+            background-color: rgb(37, 1, 57);
+            border-radius: 8px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: rgb(37, 1, 57);
+            padding: 40px 20px;
+            animation: slideUp 0.5s ease-in-out;
+        }
+        @keyframes slideUp {
+            from {
+                bottom: -100px;
+            }
+            to {
+                bottom: 0;
+            }
+        }
+        .footer ul {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px 80px;
+        }
+        .footer ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        footer .footer-rights {
+            color: gray;
+            padding: 12px 0;
+            text-align: center;
+        }
+        .footer-social a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        
+        }
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .footer-social a:hover {
+            color: blueviolet;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">PRERNA'S PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <img src="PRERNA.jpg" alt="PRERNA DIVAKAR" class="about-image">
+            <h1>About Me</h1>
+            <p>
+                Hi, I'm Prerna Divakar, a passionate Data Scientist and Web Developer. With a strong background in 
+                data analysis, statistical tools, and web development, I strive to deliver impactful solutions 
+                through technology. My journey has equipped me with a diverse skill set, including blockchain 
+                technology, ethical hacking, and business intelligence.
+            </p>
+            <p>
+                I am dedicated to continuous learning and professional growth, and I enjoy working on projects 
+                that challenge me to push the boundaries of my knowledge. I look forward to collaborating with 
+                like-minded individuals and organizations to create innovative and effective solutions.
+            </p>
+        </section>
+        <section class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">Data Analysis</div>
+                <div class="skill-item">Web Development</div>
+                <div class="skill-item">Blockchain</div>
+                <div class="skill-item">Ethical Hacking</div>
+                <div class="skill-item">Business Intelligence</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Nodejs</div>
+                <div class="skill-item">HTML | CSS </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>PRERNA DIVAKAR</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/Prernadivakar03" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/prerna-divakar-130045283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: prernadivakar0328@gmail.com</p>
+            <p>Location: Mumbai | India</p>
+        </div>
+        <div class="footer-rights">Copyright &#169; prernadivakar0328@gmail.com | All rights reserved </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact PRERNA DIVKAKAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(3, 0, 18);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(37, 1, 57);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: blueviolet;
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+        .contactSection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 110px 0;
+        }
+        .contactSection > div{
+            width: 60%;
+            margin: 60px;
+        }
+        .contactSection h1{
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .contactSection p{
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .contactSection form{
+            display: flex;
+            flex-direction: column;
+        }
+        .contactSection input, .contactSection textarea{
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contactSection button{
+            padding: 10px 20px;
+            background-color: rgb(10, 1, 53);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer{
+            background-color: rgb(37, 1, 57);
+        }
+        .footer{
+            display: flex;
+            padding: 40px 80px;
+        }
+        .footer ul {
+            display: flex;
+            padding: 40px 80px;
+            justify-content: space-evenly;
+        }
+        .footer ul li {
+            list-style: none;
+            margin:0 23px;
+        }
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .footer-social a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-social a:hover {
+            color: blueviolet;
+        }
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 10px 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">PRERNA'S PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contactSection">
+            <div>
+                <h1>Contact Me</h1>
+                <p>If you have any questions or would like to work with me, feel free to reach out using the form below.</p>
+                <form action="mailto:prernadivakar0328@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>PRERNA DIVAKAR</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/Prernadivakar03" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/prerna-divakar-130045283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: prernadivakar0328@gmail.com</p>
+            <p>Location: Mumbai | India</p>
+        </div>
+        <div class="footer-rights">Copyright &#169; prernadivakar0328@gmail.com | All rights reserved</div>
+    </footer>
+</body>
+</html>
